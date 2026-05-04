@@ -1,20 +1,37 @@
-# CertifyMe Admin Portal
+# CertifyMe Admin Portal Backend
 
-## 📌 Overview
-A Flask-based backend system for admin authentication and opportunity management.
+## Overview
+This project is a backend system built using Flask for managing admin operations and opportunities.
 
-## 🚀 Features
-- Admin Signup & Login
-- Forgot Password (Token Expiry)
-- Opportunity CRUD (Create, Read, Update, Delete)
-- Session-based Authentication
-- Data stored in SQLite
-
-## 🛠 Tech Stack
-- Python (Flask)
-- HTML, CSS, JavaScript
+## Tech Stack
+- Python
+- Flask
+- SQLAlchemy
 - SQLite
 
-## ▶️ Run Project
-pip install flask flask-cors flask-login flask-bcrypt  
+## Features
+- Admin Signup & Login
+- Secure Authentication (Password Hashing)
+- CRUD Operations on Opportunities
+- Session Management
+
+## How to Run
+
+1. Clone the repository
+git clone https://github.com/Suhailkhan-coder2/CertifyMe-Admin-Portal.git
+
+2. Install dependencies
+pip install -r requirements.txt
+
+3. Run the app
 python app.py
+
+## API Endpoints
+
+POST /signup  
+POST /login  
+POST /logout  
+POST /add-opportunity  
+GET /get-opportunities  
+PUT /update-opportunity/<id>  
+DELETE /delete-opportunity/<id>
